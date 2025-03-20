@@ -1,0 +1,160 @@
+.question-form {
+    max-width: 600px;
+    margin: auto;
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-label {
+    display: block;
+    font-weight: bold;
+    color: #000080;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #000080;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.btn-clear, .btn-save {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #000080;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.question-item {
+    border: 1px solid #000080;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f0f8ff;
+    border-radius: 8px;
+}
+
+.question-item h3 {
+    color: #000080;
+}
+
+.question-item p {
+    color: #000080;
+}
+
+.btn-delete {
+    margin-top: 10px;
+    background-color: #000080;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+}
+/*
+test
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #000080;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: #000060;
+}
+
+.question-container {
+    border: 1px solid #000080;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f0f8ff;
+    border-radius: 8px;
+}
+
+.question-container h3 {
+    color: #000080;
+}
+
+.question-container p {
+    color: #000080;
+}
+.validation-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+
+.drag-and-drop-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.drag-and-drop-table th,
+.drag-and-drop-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+
+
+.drag-and-drop-table .ui-state-highlight {
+    height: 1.5em;
+    line-height: 1.2em;
+    background-color: #ffc;
+}
+.modal-content
+{
+    max-width: fit-content;
+    /*margin-right: auto;*/
+    width: 100%;
+}
+#courseInfoModal {
+    display: none;
+}
+.fa-info-circle {
+    color: #007bff;
+    cursor: pointer;
+}
+@media (max-width: 680px) {
+    .modal-content {
+        width: 99%;
+        padding: 10px;
+    }
+
+    .close {
+        font-size: 18px;
+    }
+}
+select.sc {
+    width: 100% !important;
+}
+.scc {
+    width: 20%;
+}
+button.sc {
+    width: 10% !important;
+}
