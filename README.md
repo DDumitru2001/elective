@@ -1,6 +1,6 @@
 # General information #
-This is an extension plugin for Moodle.  Moodle is an online, open source learning platform.
-This plugin helps universities to make election process much easier.
+This is an extension plugin for Moodle.  Moodle is an online, open source learning platform.\
+This plugin helps universities to make election process much easier.\
 You will need to set up Moodle before using this plugin.
 Set up it from [here](https://docs.moodle.org/405/en/Installing_Moodle).
 
