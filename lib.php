@@ -30,6 +30,29 @@ function mod_elective_extend_settings_navigation(settings_navigation $settingsna
             $PAGE->secondarynav->add_node($node);
         }
     }
+    if (has_capability('mod/elective:viewanswers', $PAGE->cm->context)) {
+        $url = new moodle_url('/mod/elective/allocateStudents.php', array('id' => $PAGE->cm->id));
+        $node = navigation_node::create(
+            get_string('allocateStudents', 'elective'),
+            $url,
+            navigation_node::TYPE_SETTING,
+            null,
+            'mod_elective_answers',
+            new pix_icon('i/grades', '')
+        );
+
+        $node->text = format_string(get_string('allocateStudents', 'elective'), true, array('context' => $PAGE->cm->context));
+        if (class_exists('theme_adaptable\output\core_renderer')) {
+            $PAGE->navigation->add_node($node);
+        } else {
+            $electivenode->add_node($node);
+        }
+
+        if ($PAGE->has_secondary_navigation()) {
+            $PAGE->secondarynav->add_node($node);
+        }
+    }
+
 }
 
 
